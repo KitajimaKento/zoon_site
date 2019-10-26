@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'ヒラギノ角ゴシック W3';
+  src: url('../fonts/hiragino_kaku_gothic_subset.woff') format('woff');
+}
+
+html,body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  background-color: rgb(243,243,233);
+}
+
+/*------------------------------ ヘッダー ---------------------------------*/
+header {
+  background-color: rgb(0,0,0);
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 330px;
+  height: 55px;
+}
+
+header p {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(190,190,190);
+  width: 400px;
+  margin-top: 30px;
+  font-weight: 100px;
+  line-height: 16px;
+}
+
+header strong {
+  color: rgb(255,255,255);
+}
+/*----------------------------- メニュー -----------------------------------*/
+nav {
+  max-width: 100%;
+  background-color: rgb(71,72,69);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-block {
+  width: 640px;
+  color: rgb(255,255,255);
+  display: flex;
+}
+
+.menu-block li {
+  font-size: 30px;
+  width: 100%;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'ヒラギノ角ゴシック W3';
+}
+
+.menu-block > li > a {
+  text-decoration: none;
+  color: rgb(255,255,255);
+  padding: 27px 0;
+}
+
+.menu-block > li:hover:nth-child(1) {
+  background-color: rgb(225,133,91);
+}
+.menu-block > li:hover:nth-child(2) {
+  background-color: rgb(164,215,42);
+}
+.menu-block > li:hover:nth-child(3) {
+  background-color: rgb(28,178,178);
+}
+.menu-block > li:hover:nth-child(4) {
+  background-color: rgb(231,184,45);
+}
+/*-------------- プルダウンメニュー -----------------------*/
+.pull-down {
+  position:relative;
+  cursor:default;
+}
+
+.pull-down-list {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background: rgb(0,0,0);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pull-down-list > li > a {
+  color: rgb(190,190,190);
+  font-size: 14px;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(66,66,80);
+  padding: 8px;
+  text-align: center;
+}
+
+.pull-down-list > li:hover {
+  background-color: rgb(65,86,11);
+}
+
+.pull-down:hover > .pull-down-list {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+/*----------------- Top部分 -----------------------------*/
+main {
+  overflow: hidden;
+}
+
+.content {
+  width: 50%;
+  margin:0 auto;
+  background-color: rgb(243,243,233);
+  position: relative;
+  min-height: 100%;
+  margin-top: 50px;
+  margin-bottom: 58px;
+}
+/*-------------------- ニュース部分 -----------------------*/
+.news {
+  padding: 18px;
+  font-weight: bold;
+  border: solid 1px rgb(20,151,24);
+  background-color: rgb(255,255,255);
+  text-align: center;
+}
+
+.news p {
+  font-size: 12px;
+  text-align: left;
+}
+/*---------------- 人気の画像コーナー ---------------------*/
+.top-h2 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(0,0,0);
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.popular-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-images figure > img {
+  width: 130px;
+  height: 130px;
+}
+
+.popular-images figcaption {
+  text-align: center;
+  margin-top: 9px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.blue {
+  color: rgb(3,17,150);
+}
+
+.orange {
+  color: rgb(207,119,46);
+}
+
+.green {
+  color:rgb(20,151,24);
+}
+
+.pink {
+  color: rgb(204,110,157);
+}
+/*------------------ 人気の撮影スポット -------------------------*/
+.popular-shooting {
+  border: solid 1px rgb(204,204,204);
+  border-collapse: collapse;
+}
+
+.popular-shooting tr td:nth-child(1) {
+  vertical-align: middle;
+  width: 230px;
+  height: 50px;
+  background-color: rgb(238,238,238);
+  padding-left: 10px;
+}
+
+.popular-shooting tr td:nth-child(2) {
+  font-size: 14px;
+  background-color: rgb(255,255,255);
+  padding-left: 15px;
+  width: 410px;
+  height: 47px;
+  vertical-align: middle;
+}
+
+.popular-shooting tr {
+  border: 1px dotted rgb(204,204,204);
+}
+
+.popular-shooting tr td > a {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(17,112,214);
+  text-align: left;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(17,112,214);
+  padding-bottom: 1px;
+}
+/*------------------------ コピーライター ----------------------*/
+footer {
+  max-width: 100%;
+  height: 80px;
+  background-color: rgb(0,0,0);
+}
+footer p {
+  color: rgb(255,255,255);
+  font-size: 15px;
+  text-align: center;
+  line-height: 79px;
+}
+
+footer span {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+/*---------------------- バリデーション ---------------------------------*/

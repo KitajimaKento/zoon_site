@@ -1,0 +1,48 @@
+nav p {
+  color: rgb(240,248,255);
+  padding:20px;
+}
+
+table tr:nth-child(odd) td {
+	background: rgb(240,248,255);
+}
+
+table tr:nth-child(even) td {
+	background: rgb(230,230,249);
+}
+
+.content > p {
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.db_table {
+  background: rgb(177,196,221);
+  margin: 0 auto;
+  text-align: center;
+}
+.db_table th {
+  padding: 10px;
+}
+
+.db_table td {
+  padding: 10px;
+}
+
+.logout-form {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.logout {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.red {
+  color: rgb(255,0,0);
+}
+
+.red-border {
+  border: 1px solid rgb(255,0,0)!important;
+}
